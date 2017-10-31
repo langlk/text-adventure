@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { Player } from '../player.model';
 
@@ -9,7 +10,8 @@ import { Player } from '../player.model';
 })
 export class StartPageComponent implements OnInit {
   player: Player;
-  constructor() { }
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -17,5 +19,10 @@ export class StartPageComponent implements OnInit {
   addPlayer(newPlayer: Player) {
     this.player = newPlayer;
     alert("Welcome, " + this.player.name);
+    this.start();
+  }
+
+  start() {
+    this.router.navigate(['page', 1]);
   }
 }
