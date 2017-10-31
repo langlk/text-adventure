@@ -18,7 +18,6 @@ export class StartPageComponent implements OnInit {
 
   addPlayer(newPlayer: Player) {
     this.player = newPlayer;
-    alert("Welcome, " + this.player.name);
     this.start();
   }
 
