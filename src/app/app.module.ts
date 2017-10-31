@@ -6,11 +6,13 @@ import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { StartPageComponent } from './start-page/start-page.component';
+import { PlayerInfoComponent } from './player-info/player-info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StartPageComponent
+    StartPageComponent,
+    PlayerInfoComponent
   ],
   imports: [
     BrowserModule,

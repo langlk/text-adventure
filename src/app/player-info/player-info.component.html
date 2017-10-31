@@ -1,0 +1,18 @@
+<div class="player-info">
+  <h2>Enter your information to get started:</h2>
+  <form >
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input #name name="name" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="gender">Pronouns:</label>
+      <select #gender name="gender" class="form-control">
+        <option value="female">She/Her</option>
+        <option value="male">He/Him</option>
+        <option value="none">They/Them</option>
+      </select>
+    </div>
+    <button (click)="addPlayer(name.value, gender.value); name.value=''; gender.value='female';" type="button" class="btn">Start!</button>
+  </form>
+</div>
