@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 
 import { Player } from '../player.model';
 import { Page } from '../page.model';
+import { Option } from '../option.model';
 import { PageService } from '../page.service';
 import { PlayerService } from '../player.service';
 
@@ -35,8 +36,9 @@ export class PageComponent implements OnInit {
     });
   }
 
-  goTo(id: number) {
-    this.router.navigate(['page', id]);
+  goTo(option: Option) {
+    this.player.points += option.points;
+    this.router.navigate(['page', option.page]);
   }
 
 }

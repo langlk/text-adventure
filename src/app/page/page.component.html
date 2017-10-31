@@ -14,6 +14,6 @@
   <p>{{page.text}}</p>
 
   <p *ngFor="let option of page.options">
-    <a (click)="goTo(option[1])">{{option[0]}}</a>
+    <a (click)="goTo(option)">{{option.text}}</a>
   </p>
 </div>
