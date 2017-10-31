@@ -16,16 +16,20 @@ export const PAGES: Page[] = [
   new Page(
     "You've decided to be a SUPERHERO! Well chosen, [name]. You're about to begin your journey, which means that it's time for your ORIGIN STORY. What beginning shall you choose?",
     [
-      new Option("Go to third page", 3, 2),
-      new Option("Go to first Page", 1, -1)
+      new Option("The Orphaned Heir", 14, 20),
+      new Option("The Scientific Accident", 15, 5),
+      new Option("The Alien Refugee", 16, 60),
+      new Option("The Misunderstood Gift", 17, 5)
     ],
     2
   ),
   new Page(
     "Well, well, a SUPERVILLAIN, eh? You've made an excellent decision. It's time for you to become the far more interesting FOIL to that goody-two-shoes hero. But first, what motivates your wicked deeds?",
     [
-      new Option("Go to second page", 2, -1),
-      new Option("Go to first Page", 1, -2)
+      new Option("Greed!", 10, 15),
+      new Option("Revenge!", 11, 5),
+      new Option("Chaos!", 12, 30),
+      new Option("Power!", 13, 20)
     ],
     3
   ),
