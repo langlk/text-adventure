@@ -1,5 +1,19 @@
-<p>{{page.text}}</p>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="">Text Adventure</a>
+    </div>
+    <ul *ngIf="player" class="nav navbar-nav navbar-right">
+      <li><a>{{player.name}}</a></li>
+      <li><a>{{player.points}}</a></li>
+    </ul>
+  </div>
+</nav>
 
-<p *ngFor="let option of page.options">
-  <a (click)="goTo(option[1])">{{option[0]}}</a>
-</p>
+<div class="container">
+  <p>{{page.text}}</p>
+
+  <p *ngFor="let option of page.options">
+    <a (click)="goTo(option[1])">{{option[0]}}</a>
+  </p>
+</div>

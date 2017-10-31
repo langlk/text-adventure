@@ -5,6 +5,7 @@ import { Location } from '@angular/common';
 import { Player } from '../player.model';
 import { Page } from '../page.model';
 import { PageService } from '../page.service';
+import { PlayerService } from '../player.service';
 
 @Component({
   selector: 'app-page',
@@ -16,15 +17,18 @@ export class PageComponent implements OnInit {
   sub;
   pageID: number;
   page: Page;
+  player: Player;
 
   constructor(
     private router: Router,
     private route: ActivatedRoute,
     private location: Location,
-    private pageService: PageService
+    private pageService: PageService,
+    private playerService: PlayerService
   ) { }
 
   ngOnInit() {
+    this.player = this.playerService.getPlayer();
     this.sub = this.route.params.subscribe(params => {
       this.pageID = params['id'];
       this.page = this.pageService.findPage(this.pageID);

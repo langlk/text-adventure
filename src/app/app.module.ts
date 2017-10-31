@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { routing } from './app.routing';
+import { PlayerService } from './player.service';
 import { AppComponent } from './app.component';
 import { StartPageComponent } from './start-page/start-page.component';
 import { PlayerInfoComponent } from './player-info/player-info.component';
@@ -20,9 +21,9 @@ import { PageComponent } from './page/page.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
   ],
-  providers: [],
+  providers: [PlayerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
