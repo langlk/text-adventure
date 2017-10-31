@@ -11,7 +11,7 @@
 </nav>
 
 <div class="container">
-  <p>{{page.text}}</p>
+  <p>{{page.displayText(player.name)}}</p>
 
   <p *ngFor="let option of page.options">
     <a (click)="goTo(option)">{{option.text}}</a>
