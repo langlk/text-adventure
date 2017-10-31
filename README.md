@@ -1,5 +1,17 @@
 # TextAdventure
 
+## Planning:
+
+* Page:
+  * Title
+  * Description
+  * Options that link to other pages
+* Player:
+  * Name
+  * Points
+  * Gender
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Development server
