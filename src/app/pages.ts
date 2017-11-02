@@ -19,7 +19,7 @@ export const PAGES: Page[] = [
       new Option("The Orphaned Heir", 14, 20),
       new Option("The Scientific Accident", 15, 5),
       new Option("The Alien Refugee", 16, 60),
-      new Option("The Misunderstood Gift", 17, 5)
+      new Option("The Mysteriously Gifted", 17, 5)
     ],
     2
   ),
@@ -56,5 +56,48 @@ export const PAGES: Page[] = [
       new Option("No, I understand the risks.", 7, 0)
     ],
     6
+  ),
+  new Page(
+    "Very well, [name]. If you insist. I wish you the best of luck. In that case, pick your career.",
+    [
+      new Option("Security Guard", 18, 1),
+      new Option("Barista", 19, 2),
+      new Option("Doctor", 20, 3),
+      new Option("Programmer", 21, 4)
+    ],
+    7
+  ),
+  new Page(
+    "Well, you could have picked a worse career. VILECORP, the brainchild of VEX VILLIFOUS, is hiring guards like crazy right now. Full-time, hazard pay, and great benefits! You can start on Monday!",
+    [
+      new Option("Great!", 22, -1),
+      new Option("Anything less... evil available?", 23, 0)
+    ],
+    18
+  ),
+  new Page(
+    "Let's see... It looks like there's a government contract with A.R.M.O.R., a new branch focused on research into SUPERPOWERED INDIVIDUALS. They do have a sizeable amount of liability paperwork for you to fill out, first, though. Sound better?",
+    [
+      new Option("Much!", 24, 1),
+      new Option("Never mind, VILECORP it is.", 22, -1)
+    ],
+    23
+  ),
+  new Page(
+    "Alright, [name], welcome to your first day at VILECORP. After receiving your suit, earpiece, and gun, you've been tasked with guarding VILECORP's newest research compound. You've been making your rounds for about an hour when you hear a STRANGE NOISE coming from one of the buildings. What do you do?",
+    [
+      new Option("Investigate.", 25, 0),
+      new Option("Ignore it.", 26, 0),
+    ],
+    22
+  ),
+  new Page(
+    "You move toward the building, when a CAPED FIGURE bursts through one of the walls. A MONSTROUS CREATURE barrels out after them. Through your earpiece, you hear an intruder alert, and an order to shoot the intruder.",
+    [
+      new Option("Shoot the CAPED FIGURE.", 27, -1),
+      new Option("Shoot the MONSTER.", 28, -1),
+      new Option("Run away!", 29, -1)
+    ],
+    25
   )
 ];
