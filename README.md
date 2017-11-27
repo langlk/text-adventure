@@ -1,40 +1,42 @@
-# TextAdventure
+# Text Adventure
 
-## Planning:
+### _Epicodus Practice in Angular, October 31, 2017_
 
-* Page:
-  * Title
-  * Description
-  * Options that link to other pages
-* Player:
-  * Name
-  * Points
-  * Gender
+### By Kelsey Langlois
 
+## Description
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+_This is a practice web app featuring the start of a choose-your-own adventure about superheroes._
 
-## Development server
+## Setup/Installation Requirements
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Clone this repository.
+* Make sure you have Node.js installed.
+    * Instructions for installing Node.js can be found [here](https://www.learnhowtoprogram.com/javascript/getting-started-with-javascript-2f9a73dc-b7f5-4a22-9101-e69d49f552ac/installing-node-js).
+* From the project root directory, run the following commands in the terminal:
+  ```
+  npm install
+  bower install
+  ng serve
+  ```
+* Open the site in your default web browser at ```localhost:4200```.
+  
+## Support and contact details
 
-## Code scaffolding
+_Please contact [kels.langlois@gmail.com](mailto:kels.langlois@gmail.com) with questions, comments, or issues._
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+## Technologies Used
 
-## Build
+* JavaScript
+* TypeScript
+* Node.js
+* Angular
+* Bootstrap
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0. To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-## Running unit tests
+### License
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Copyright (c) 2017 **Kelsey Langlois**
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+*This software is licensed under the MIT license.*
